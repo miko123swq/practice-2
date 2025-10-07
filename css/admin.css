@@ -1,0 +1,134 @@
+/* ===== Админ-панель (admin.css) ===== */
+
+.admin-container {
+  flex: 1;
+  padding: 30px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section {
+  background-color: #1a1a1a;
+  border: 2px solid #00ffff;
+  border-radius: 10px;
+  padding: 25px;
+  margin-bottom: 40px;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
+}
+
+.section h2 {
+  color: #00ffff;
+  text-align: center;
+  text-shadow: 0 0 8px #00ffff;
+  margin-bottom: 20px;
+  font-size: 26px;
+  letter-spacing: 1px;
+}
+
+/* ===== Кнопка добавления ===== */
+.add-btn {
+  display: inline-block;
+  background-color: #00ffff;
+  color: #121212;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-bottom: 15px;
+}
+
+.add-btn:hover {
+  background-color: #ff00ff;
+  color: #fff;
+  box-shadow: 0 0 12px #ff00ff;
+}
+
+/* ===== Таблицы ===== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  color: #eee;
+  background-color: #111;
+  border-radius: 8px;
+  overflow: hidden;
+  font-size: 14px;
+  box-shadow: 0 0 10px rgba(0,255,255,0.3);
+}
+
+thead {
+  background-color: #00ffff;
+  color: #121212;
+  text-transform: uppercase;
+}
+
+thead th {
+  padding: 12px;
+  font-weight: bold;
+  text-align: left;
+}
+
+tbody tr {
+  border-bottom: 1px solid #333;
+}
+
+tbody tr:hover {
+  background-color: #222;
+  transition: background 0.2s;
+}
+
+td {
+  padding: 10px 12px;
+}
+
+/* ===== Кнопки действий (редактировать/удалить) ===== */
+.action-btn {
+  padding: 6px 10px;
+  border: none;
+  border-radius: 6px;
+  margin-right: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.edit-btn {
+  background-color: #00ffff;
+  color: #121212;
+}
+
+.edit-btn:hover {
+  background-color: #0088cc;
+  color: white;
+  box-shadow: 0 0 8px #00ffff;
+}
+
+.delete-btn {
+  background-color: #ff0066;
+  color: #fff;
+}
+
+.delete-btn:hover {
+  background-color: #cc0044;
+  box-shadow: 0 0 8px #ff00ff;
+}
+
+/* ===== Адаптив ===== */
+@media (max-width: 768px) {
+  table {
+    font-size: 12px;
+  }
+
+  .add-btn {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section h2 {
+    font-size: 20px;
+  }
+}

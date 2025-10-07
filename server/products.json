@@ -1,0 +1,9 @@
+[
+  { "id": 1, "name": "Видеокарта RTX 3080", "description": "Мощная видеокарта для игр и работы", "price": 85000, "image": "https://cmrhgeoaiulomlisdsrx.supabase.co/storage/v1/object/public/allGoods/rtx3080.jpg" },
+  { "id": 2, "name": "Intel Core i9", "description": "Процессор последнего поколения", "price": 45000, "image": "https://cmrhgeoaiulomlisdsrx.supabase.co/storage/v1/object/public/allGoods/i9.jpg" },
+  { "id": 3, "name": "ASUS Motherboard", "description": "Надёжная материнская плата", "price": 20000, "image": "https://cmrhgeoaiulomlisdsrx.supabase.co/storage/v1/object/public/allGoods/mb%20asus.webp" },
+  { "id": 4, "name": "Блок питания Thunder", "description": "Мощный блок питания для всех систем", "price": 12133, "image": "https://cmrhgeoaiulomlisdsrx.supabase.co/storage/v1/object/public/allGoods/thunder.jpg" },
+  { "id": 5, "name": "Корпус Mutant 3000", "description": "Прочный корпус с хорошей вентиляцией", "price": 9442, "image": "https://cmrhgeoaiulomlisdsrx.supabase.co/storage/v1/object/public/allGoods/mutant.webp" },
+  { "id": 6, "name": "Водяное охлаждение", "description": "Эффективная система водяного охлаждения", "price": 20000, "image": "img/vod.jpg" },
+  { "id": 7, "name": "Кулер калл ебанный", "description": "Игровой кулер для процессора", "price": 7566, "image": "img/scale_1200.jpg" }
+]
