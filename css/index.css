@@ -1,0 +1,149 @@
+/* ===== Общие стили ===== */
+body {
+  margin: 0;
+  font-family: 'Orbitron', Arial, sans-serif; /* геймерский шрифт */
+  background-color: #121212;
+  color: #eee;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: #00ffff;
+}
+
+a:hover {
+  color: #ff00ff;
+}
+
+/* ===== Хедер ===== */
+.site-header {
+  background-color: #0d0d0d;
+  color: #fff;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #00ffff;
+}
+
+.site-header .logo h1 {
+  margin: 0;
+  font-size: 28px;
+  letter-spacing: 2px;
+}
+
+.nav-menu ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-menu li {
+  margin-left: 20px;
+}
+
+.nav-menu a {
+  color: #00ffff;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.nav-menu a:hover {
+  color: #ff00ff;
+}
+
+/* ===== Каталог ===== */
+.catalog {
+  flex: 1;
+  padding: 30px 20px;
+}
+
+.catalog h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 32px;
+  color: #00ffff;
+  text-shadow: 0 0 5px #00ffff;
+}
+
+/* ===== Сетка товаров ===== */
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.product-card {
+  background-color: #1a1a1a;
+  padding: 15px;
+  width: 220px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,255,255,0.2);
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.product-card h3 {
+  margin: 10px 0 5px 0;
+  font-size: 18px;
+  color: #00ffff;
+}
+
+.product-card p {
+  font-size: 14px;
+  color: #ccc;
+  min-height: 40px;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(255,0,255,0.4);
+}
+
+/* ===== Футер ===== */
+.site-footer {
+  background-color: #0d0d0d;
+  color: #888;
+  text-align: center;
+  padding: 15px 20px;
+  border-top: 2px solid #00ffff;
+  margin-top: auto;
+}
+
+/* ===== Адаптив ===== */
+@media (max-width: 768px) {
+  .product-list {
+    gap: 15px;
+  }
+
+  .product-card {
+    width: 45%;
+  }
+
+  .nav-menu ul {
+    gap: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .product-card {
+    width: 100%;
+  }
+
+  .nav-menu ul {
+    flex-direction: column;
+    align-items: center;
+  }
+}

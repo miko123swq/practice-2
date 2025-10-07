@@ -1,0 +1,137 @@
+/* ===== Основные стили для страницы авторизации ===== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #0d0d0d; /* тёмный фон */
+  color: #e0e0e0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ===== Хедер ===== */
+.site-header {
+  background-color: #111;
+  padding: 15px 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+  text-align: center;
+}
+
+.site-header .logo h1 {
+  color: #00aaff;
+  text-shadow: 0 0 8px #00aaff;
+}
+
+/* ===== Контент ===== */
+.auth-page {
+  flex: 1; /* чтобы футер прижимался вниз */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.auth-container {
+  background: #1a1a1a; /* тёмный контейнер */
+  padding: 30px 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 170, 255, 0.5);
+  width: 100%;
+  max-width: 400px;
+}
+
+.auth-container h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #00aaff;
+  text-shadow: 0 0 5px #00aaff;
+}
+
+/* ===== Форма ===== */
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #e0e0e0;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #333;
+  border-radius: 5px;
+  background-color: #222;
+  color: #fff;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #00aaff;
+  box-shadow: 0 0 5px rgba(0, 170, 255, 0.5);
+}
+
+/* ===== Кнопка ===== */
+.btn-submit {
+  width: 100%;
+  padding: 12px;
+  background-color: #00aaff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn-submit:hover {
+  background-color: #0088cc;
+  box-shadow: 0 0 10px #00aaff;
+}
+
+/* ===== Ссылка ===== */
+.auth-link {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.auth-link a {
+  color: #00aaff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.auth-link a:hover {
+  text-decoration: underline;
+}
+
+/* ===== Футер ===== */
+.site-footer {
+  background-color: #111;
+  color: #888;
+  text-align: center;
+  padding: 15px 10px;
+  font-size: 14px;
+  box-shadow: 0 -2px 5px rgba(0,0,0,0.5);
+}
+
+/* ===== Адаптив ===== */
+@media (max-width: 480px) {
+  .auth-container {
+    padding: 20px 15px;
+  }
+
+  .btn-submit {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
